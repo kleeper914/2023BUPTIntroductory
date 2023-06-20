@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="title">倒计时设置器</view>
+<view class="container" style="width: 750rpx; height: 999rpx; display: flex; box-sizing: border-box">
+  <view class="countdown-container">
+    <text class="countdown">{{ countdownText }}</text>
+  </view>
+  <view class="input-container">
+    <text class="input-label">请输入一个时间：</text>
+    <input class="input" bindinput="handleInput" placeholder="格式：YYYYMMDD"></input>
+  </view>
+  <view class="button-container">
+    <text class="button" bindtap="startCountdown">开始倒计时</text>
+    <text class="button" bindtap="stopCountdown">停止倒计时</text>
+    <text class="button" bindtap="sendData">发送数据</text>
+  </view>
+</view>
